@@ -1,7 +1,7 @@
 def isCryptSolution(crypt, solution):
     combo = []
     
-    #make combo a list of the three numbers seperated by "-"
+    #make combo a list of the three numbers seperated by "_"
     for i in range(3):
         for j in crypt[i]:
             for k in solution:
@@ -13,7 +13,7 @@ def isCryptSolution(crypt, solution):
     newCombo = [[]]
     count = 0
     
-    #break the numbers into their three individual parts and store it in 2D array newCombo
+    #break the numbers into their three individual parts and store it in the 2D array newCombo
     for i in combo:
         if i == "_":
             newCombo.append([])
@@ -33,7 +33,7 @@ def isCryptSolution(crypt, solution):
     
     return(True)
 
-#creats the integer value for the list of nmbers (ex. it converts [1, 2, 3] into 123) 
+#creates the integer value for the list of numbers (ex. it converts [1, 2, 3] into 123)
 def numb(arr):
     
     num = 0
